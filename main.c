@@ -10,6 +10,7 @@ int main(void)
     InitADC();
     buttons();
     timerinit();
+    UARTinit(103);
     uint16_t adcvar;
     char uartdata;
 

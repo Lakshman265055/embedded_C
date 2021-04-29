@@ -49,7 +49,7 @@ if((adcvar>=0) && (adcvar<=209)){
     }
     else{
         OCR1A = 0; //0% output
-        uartdata = "0";
+        uartdata = '0';
     }
 return uartdata;
 }

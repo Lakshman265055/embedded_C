@@ -2,7 +2,7 @@
 #define _HEATCONTROLLER_H_
 
 #include <avr/io.h>
-
+#include <util/delay.h>
 void buttons(void);
 
 void InitADC();

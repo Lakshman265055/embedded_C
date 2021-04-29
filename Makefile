@@ -6,6 +6,7 @@ BUILD_DIR = Build
 SRC = src/button.c\
 src/temperature.c\
 src/pulsewidthmodulation.c\
+src/uart.c\
 main.c
 
 
