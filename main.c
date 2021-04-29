@@ -28,7 +28,7 @@ int main(void)
 
          PORTB|=(1<<PB0);
         adcvar = ReadADC(0);
-        uartdata = pwm(adcvar);
+        uartdata = pwm(adcvar); 
         UARTwritecharacter(uartdata);
 
 
