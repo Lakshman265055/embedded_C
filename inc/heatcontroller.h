@@ -3,8 +3,16 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
+/**
+ * @brief A function for button sensor and heater
+ * 
+ */
 void buttons(void);
 
+/**
+ * @brief A function to initoalse AD
+ * 
+ */
 void InitADC();
 
 char pwm(uint16_t adcvar);

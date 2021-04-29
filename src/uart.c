@@ -1,7 +1,22 @@
+/**
+ * @file uart.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-29
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <avr/io.h>
 #include <util/delay.h>
 #include "heatcontroller.h"
 
+/**
+ * @brief 
+ * 
+ * @param ubrr_value 
+ */
 void UARTinit(uint16_t ubrr_value){
 
     UBRR0L = ubrr_value;
@@ -11,7 +26,11 @@ void UARTinit(uint16_t ubrr_value){
     UCSR0B = (1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
 
 }
-
+/**
+ * @brief 
+ * 
+ * @return char 
+ */
 char UARTreadchar(){
 
 while(!(UCSR0A & (1<<RXC0))){
