@@ -2,6 +2,6 @@
 
 ## Screenshot
 
-![ON](https://github.com/hemanthasapu/embedded_systems_project_256889/blob/main/simulation/Circuit.png)
+![ON](https://github.com/Lakshman265055/embedded_C/blob/main/simulation/Circuit.png)
 
 
