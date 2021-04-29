@@ -7,15 +7,15 @@
 void InitADC()
 {
     ADMUX=(1<<REFS0);
-    ADCSRA=(1<<ADEN)|(7<<ADPS0);
+    ADCSRA=(1<<ADEN)|(7<<ADPS0); // 10000111
 
 }
-uint16_t ReadADC(uint8_t ch)
+uint16_t ReadADC(uint8_t ch) 
 {
     //select ADC channel ch must be 0-7
-    ADMUX&=0xf8;
+    ADMUX&=0xf8; //11111000
     ch=ch&0b00000111;
-    ADMUX|=ch;
+    ADMUX|=ch; // 10000111
     //start single conversion
     ADCSRA|=(1<<ADSC);
     //wait for conversation to complete

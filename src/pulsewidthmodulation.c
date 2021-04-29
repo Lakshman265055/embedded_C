@@ -9,9 +9,9 @@
 
 void timerinit(void){
 
-TCCR0A|=(1<<COM0A1)|(1<<WGM00)|(1<<WGM00);
-    // Insert code
-TCCR0B|=(1<<CS01)|(1<<CS00);
+TCCR0A|=(1<<COM0A1)|(1<<WGM00)|(1<<WGM01);
+    // Insert code 
+TCCR0B|=(1<<CS01)|(1<<CS00); //prescaling 64 
 DDRD|=(1<<PD6);
 
 
