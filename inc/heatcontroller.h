@@ -14,7 +14,12 @@ void buttons(void);
  * 
  */
 void InitADC();
-
+/**
+ * @brief 
+ * 
+ * @param adcvar 
+ * @return char 
+ */
 char pwm(uint16_t adcvar);
 
 void timerinit(void);
